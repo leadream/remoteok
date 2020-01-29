@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.ico" />
+    
+
+    <title>
+        
+          代码管理工具 - Remote OK
+        
+    </title>
+
+    <meta name="description" content="给职场新人和管理者的远程工作指南">
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.8/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.8/dist/spectre-exp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.8/dist/spectre-icons.min.css">
+
+    <!-- Noto Sans SC -->
+    <link href="https://fonts.loli.net/css?family=Noto+Sans+SC" rel="stylesheet">
+    <!-- Noto Sans -->
+    <link href="https://fonts.loli.net/css?family=Noto+Sans" rel="stylesheet">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.css">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Remote OK">
+    <meta property="og:description" content="给职场新人和管理者的远程工作指南">
+    <meta property="og:image" content="https://remoteok.cn/thumbnail.png">
+    <meta property="og:url" content="https://remoteok.cn/">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-47834775-26', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="container">
+  <div class="book-container">
+    <div class="columns">
+      <div class="column col-2 hide-lg">
+        <div class="book-sidebar">
+  <h4 class="site-meta">
+    <a href="/">Remote OK</a>
+  </h4>
+  <div class="sidebar-content">
+    <ul>
+<li><a href="/perface">前言</a></li>
+<li><a href="/theory">理论篇</a>
+<ul>
+<li><a href="/what-is-remote">远程工作是什么</a></li>
+<li><a href="/jobs">什么样的工种适合远程工作</a></li>
+<li><a href="/value-to-employers">远程工作对于雇主的价值</a></li>
+<li><a href="/value-to-employees">远程工作对于雇员的价值</a></li>
+<li><a href="/compared-with-outsource-project">远程工作和外包的区别</a></li>
+<li><a href="/some-questions">采用远程工作需要考虑的问题</a></li>
+<li><a href="/disadvantage">远程工作的劣势</a></li>
+</ul>
+</li>
+<li><a href="/experience">经验篇</a>
+<ul>
+<li><a href="/experience-by-employees">雇员远程工作经验</a></li>
+<li><a href="/experience-by-employers">雇主远程工作经验</a></li>
+</ul>
+</li>
+<li>工具篇
+<ul>
+<li><a href="/workflows">远程团队工作流</a></li>
+<li><a href="/project-management">远程团队项目管理工具</a></li>
+<li><a href="/task-management">远程团队任务管理工具</a></li>
+<li><a href="/communication-tools">远程团队沟通工具</a></li>
+<li><a href="/time-management">远程团队时间管理工具</a></li>
+<li><a href="/code-management">远程团队代码管理工具</a></li>
+<li><a href="/design-management">远程团队设计管理工具</a></li>
+<li><a href="/meeting-tools">远程团队会议工具</a></li>
+<li><a href="/document-tool">远程团队文档协作工具</a></li>
+</ul>
+</li>
+<li><a href="/interview">访谈篇</a>
+<ul>
+<li><a href="/interview-by-tower">Tower 团队 48 个月远程实践</a></li>
+<li><a href="/interview-by-deepdevelop">从 300 到 300 万，一个远程外包团队的发展历程和经验</a></li>
+<li><a href="/interview-by-deepdevelop-1">从 300 万到 1000 万,DeepDevelop 外包业务第二阶段总结</a></li>
+</ul>
+</li>
+<li><a href="/reference">资料篇</a>
+<ul>
+<li><a href="/books">推荐书籍</a></li>
+<li><a href="/podcast">推荐播客</a></li>
+<li><a href="/website">推荐网站</a></li>
+</ul>
+</li>
+<li><a href="/conclusion">结语</a></li>
+<li><a href="/changelog">更新记录</a></li>
+<li><a href="/about-me">关于我</a></li>
+</ul>
+
+  </div>
+  <div>
+  	本书基于<strong><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-禁止演绎 4.0 国际 (CC BY-NC-ND 4.0)</a></strong>共享
+  </div>
+</div>
+
+
+<script src="/js/book-sidebar.js"></script>
+
+
+<script>
+collapse_sidebar(2)
+highlight_tab()
+show_sidebar()
+</script>
+      </div>
+
+      <div class="column col-8 col-lg-12">
+        <div class="book-content">
+          <div class="book-navbar">
+  <header class="navbar">
+  <section class="navbar-section">
+    <img class="navbar-icon" src="/favicon.ico">
+  </section>
+  <section class="navbar-center">
+    Remote OK
+  </section>
+  <section class="navbar-section">
+    <label class="accordion-header c-hand" for="accordion-sidebar">
+      <i class="icon icon-menu"></i>
+    </label>
+  </section>
+</header>
+
+<div class="accordion">
+  <input type="checkbox" id="accordion-sidebar" name="accordion-checkbox" hidden>
+  <div class="accordion-body">
+    <ul>
+<li><a href="/perface">前言</a></li>
+<li><a href="/theory">理论篇</a>
+<ul>
+<li><a href="/what-is-remote">远程工作是什么</a></li>
+<li><a href="/jobs">什么样的工种适合远程工作</a></li>
+<li><a href="/value-to-employers">远程工作对于雇主的价值</a></li>
+<li><a href="/value-to-employees">远程工作对于雇员的价值</a></li>
+<li><a href="/compared-with-outsource-project">远程工作和外包的区别</a></li>
+<li><a href="/some-questions">采用远程工作需要考虑的问题</a></li>
+<li><a href="/disadvantage">远程工作的劣势</a></li>
+</ul>
+</li>
+<li><a href="/experience">经验篇</a>
+<ul>
+<li><a href="/experience-by-employees">雇员远程工作经验</a></li>
+<li><a href="/experience-by-employers">雇主远程工作经验</a></li>
+</ul>
+</li>
+<li>工具篇
+<ul>
+<li><a href="/workflows">远程团队工作流</a></li>
+<li><a href="/project-management">远程团队项目管理工具</a></li>
+<li><a href="/task-management">远程团队任务管理工具</a></li>
+<li><a href="/communication-tools">远程团队沟通工具</a></li>
+<li><a href="/time-management">远程团队时间管理工具</a></li>
+<li><a href="/code-management">远程团队代码管理工具</a></li>
+<li><a href="/design-management">远程团队设计管理工具</a></li>
+<li><a href="/meeting-tools">远程团队会议工具</a></li>
+<li><a href="/document-tool">远程团队文档协作工具</a></li>
+</ul>
+</li>
+<li><a href="/interview">访谈篇</a>
+<ul>
+<li><a href="/interview-by-tower">Tower 团队 48 个月远程实践</a></li>
+<li><a href="/interview-by-deepdevelop">从 300 到 300 万，一个远程外包团队的发展历程和经验</a></li>
+<li><a href="/interview-by-deepdevelop-1">从 300 万到 1000 万,DeepDevelop 外包业务第二阶段总结</a></li>
+</ul>
+</li>
+<li><a href="/reference">资料篇</a>
+<ul>
+<li><a href="/books">推荐书籍</a></li>
+<li><a href="/podcast">推荐播客</a></li>
+<li><a href="/website">推荐网站</a></li>
+</ul>
+</li>
+<li><a href="/conclusion">结语</a></li>
+<li><a href="/changelog">更新记录</a></li>
+<li><a href="/about-me">关于我</a></li>
+</ul>
+
+  </div>
+</div>
+</div>
+
+<div class="book-post">
+  <h1 id="代码管理工具">代码管理工具</h1>
+<p>这一篇目，是只为程序员们设计的。虽然我们已经习惯了使用 Github 来存储代码，但是，如果你做的是企业协作场景，那么可能有更多更适合的代码托管平台。</p>
+<h2 id="总览">总览</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">费用</th>
+<th style="text-align:center">团队协作</th>
+<th style="text-align:center">自动化</th>
+<th style="text-align:center">服务集成</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Github Pro</td>
+<td style="text-align:center">$7/月</td>
+<td style="text-align:center">无限人数</td>
+<td style="text-align:center">内建CI/CD</td>
+<td style="text-align:center">支持</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="http://GitLab.com" target="_blank" rel="noopener">GitLab.com</a></td>
+<td style="text-align:center">$4/人/月</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">内建CI/CD</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">GitLab</td>
+<td style="text-align:center">服务器成本</td>
+<td style="text-align:center">无限</td>
+<td style="text-align:center">自建 Jenkins</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">BitBucket</td>
+<td style="text-align:center">$3/人/月</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">内建 CI</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Gitee</td>
+<td style="text-align:center">1280/年</td>
+<td style="text-align:center">10人</td>
+<td style="text-align:center">自建 Jenkins</td>
+<td style="text-align:center">华为容器云/华为微服务/Tencent Hub</td>
+</tr>
+<tr>
+<td style="text-align:center">Coding</td>
+<td style="text-align:center">399/人/年</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">内建 CI</td>
+<td style="text-align:center">自建 Registry</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>上述平台均提供了免费版本，表内为最低付费版本价格。</p>
+</blockquote>
+<h2 id="代码管理工具特性">代码管理工具特性</h2>
+<p>和 Github 上我们更关注影响力不同，在远程工作团队协作时，我们更看重以下几点：</p>
+<ol>
+<li><strong>私有仓库</strong>：无论你是一个远程团队，还是一个坐班的团队，你的代码库很难做到完全 100% 的开放。出于安全考虑，你总会有一部分代码是没有对外开放的。因此，私有库是必要的。</li>
+<li><strong>团队协作</strong>：由于你是团队，而不是个人，那么团队协作一定是一个重点。Github 免费版私有仓库虽然也提供了 3 个人的协作名额，但是由于 3 个人实在太少，而且缺乏其他的必备能力，因此不在本次的讨论范围内。</li>
+<li><strong>自动化手段</strong>：对于代码项目来说，必要的自动化手段可以帮助开发者更好的完成自己的工作，减少工作的压力。因此，自动化手段也是一个非常重要的能力。</li>
+</ol>
+<h2 id="工具清单">工具清单</h2>
+<h3 id="1-Github-Pro">1. Github Pro</h3>
+<p>Github Pro 是 Github 提供的服务计划，可以提供非常多的功能特性。使用 Github Pro ，可以为团队提供最好的 Git 生态。在 Github 推出了自家的 CI 服务 Github Actions 后， 除了速度慢，几乎是无敌的。</p>
+<h3 id="2-GitLab-com">2. <a href="http://GitLab.com" target="_blank" rel="noopener">GitLab.com</a></h3>
+<p><a href="http://GitLab.com" target="_blank" rel="noopener">GitLab.com</a> 是目前比较好的 Git 托管服务，相比于 Github 提供了一定的免费计划。也提供了自建的 CI/CD 工具，十分方便。</p>
+<h3 id="3-Gitlab">3. Gitlab</h3>
+<p>对于一些喜欢私有部署的企业来说，GitLab 的开源版本可能会更加适合。</p>
+<h3 id="4-BitBucket">4. BitBucket</h3>
+<p>BitBucket 是来自 Atlassian 公司的代码托管平台，值得你去试一试。</p>
+<h3 id="5-Gitee">5. Gitee</h3>
+<p>Gitee 是来自国内开源中国的产品，速度方便不错，但产品的各项能力方面，有待改进。</p>
+<h3 id="6-Coding">6. Coding</h3>
+<p>Coding 的企业版本提供了非常多的能力，我目前也在用他。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+
+      <div class="column col-2 hide-lg">
+        <div class="book-toc">
+  <div class="book-tocbot">
+  </div>
+  <div class="book-tocbot-menu">
+    <a class="book-toc-expand" onclick="expand_toc()">展开所有</a>
+    <a onclick="go_top()">返回顶部</a>
+    <a onclick="go_bottom()">前往底部</a>
+  </div>
+</div>
+
+<script>
+tocbot.init({
+  tocSelector: '.book-tocbot',
+  contentSelector: '.book-post',
+  headingSelector: 'h1, h2, h3, h4, h5',
+  collapseDepth: 2,
+  orderedList: false,
+  scrollSmooth: false,
+});
+
+function expand_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 6,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "collapse_toc()");
+  b.innerHTML = "收起所有"
+}
+
+function collapse_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 2,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "expand_toc()");
+  b.innerHTML = "展开所有"
+}
+
+function go_top() {
+  window.scrollTo(0, 0);
+}
+
+function go_bottom() {
+  window.scrollTo(0, document.body.scrollHeight);
+}
+
+</script>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

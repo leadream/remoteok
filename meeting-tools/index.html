@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/favicon.ico" />
+    
+
+    <title>
+        
+          会议工具 - Remote OK
+        
+    </title>
+
+    <meta name="description" content="给职场新人和管理者的远程工作指南">
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.8/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.8/dist/spectre-exp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.8/dist/spectre-icons.min.css">
+
+    <!-- Noto Sans SC -->
+    <link href="https://fonts.loli.net/css?family=Noto+Sans+SC" rel="stylesheet">
+    <!-- Noto Sans -->
+    <link href="https://fonts.loli.net/css?family=Noto+Sans" rel="stylesheet">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.css">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Remote OK">
+    <meta property="og:description" content="给职场新人和管理者的远程工作指南">
+    <meta property="og:image" content="https://remoteok.cn/thumbnail.png">
+    <meta property="og:url" content="https://remoteok.cn/">
+
+    
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-47834775-26', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('img')
+})
+</script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+
+<div class="container">
+  <div class="book-container">
+    <div class="columns">
+      <div class="column col-2 hide-lg">
+        <div class="book-sidebar">
+  <h4 class="site-meta">
+    <a href="/">Remote OK</a>
+  </h4>
+  <div class="sidebar-content">
+    <ul>
+<li><a href="/perface">前言</a></li>
+<li><a href="/theory">理论篇</a>
+<ul>
+<li><a href="/what-is-remote">远程工作是什么</a></li>
+<li><a href="/jobs">什么样的工种适合远程工作</a></li>
+<li><a href="/value-to-employers">远程工作对于雇主的价值</a></li>
+<li><a href="/value-to-employees">远程工作对于雇员的价值</a></li>
+<li><a href="/compared-with-outsource-project">远程工作和外包的区别</a></li>
+<li><a href="/some-questions">采用远程工作需要考虑的问题</a></li>
+<li><a href="/disadvantage">远程工作的劣势</a></li>
+</ul>
+</li>
+<li><a href="/experience">经验篇</a>
+<ul>
+<li><a href="/experience-by-employees">雇员远程工作经验</a></li>
+<li><a href="/experience-by-employers">雇主远程工作经验</a></li>
+</ul>
+</li>
+<li>工具篇
+<ul>
+<li><a href="/workflows">远程团队工作流</a></li>
+<li><a href="/project-management">远程团队项目管理工具</a></li>
+<li><a href="/task-management">远程团队任务管理工具</a></li>
+<li><a href="/communication-tools">远程团队沟通工具</a></li>
+<li><a href="/time-management">远程团队时间管理工具</a></li>
+<li><a href="/code-management">远程团队代码管理工具</a></li>
+<li><a href="/design-management">远程团队设计管理工具</a></li>
+<li><a href="/meeting-tools">远程团队会议工具</a></li>
+<li><a href="/document-tool">远程团队文档协作工具</a></li>
+</ul>
+</li>
+<li><a href="/interview">访谈篇</a>
+<ul>
+<li><a href="/interview-by-tower">Tower 团队 48 个月远程实践</a></li>
+<li><a href="/interview-by-deepdevelop">从 300 到 300 万，一个远程外包团队的发展历程和经验</a></li>
+<li><a href="/interview-by-deepdevelop-1">从 300 万到 1000 万,DeepDevelop 外包业务第二阶段总结</a></li>
+</ul>
+</li>
+<li><a href="/reference">资料篇</a>
+<ul>
+<li><a href="/books">推荐书籍</a></li>
+<li><a href="/podcast">推荐播客</a></li>
+<li><a href="/website">推荐网站</a></li>
+</ul>
+</li>
+<li><a href="/conclusion">结语</a></li>
+<li><a href="/changelog">更新记录</a></li>
+<li><a href="/about-me">关于我</a></li>
+</ul>
+
+  </div>
+  <div>
+  	本书基于<strong><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-禁止演绎 4.0 国际 (CC BY-NC-ND 4.0)</a></strong>共享
+  </div>
+</div>
+
+
+<script src="/js/book-sidebar.js"></script>
+
+
+<script>
+collapse_sidebar(2)
+highlight_tab()
+show_sidebar()
+</script>
+      </div>
+
+      <div class="column col-8 col-lg-12">
+        <div class="book-content">
+          <div class="book-navbar">
+  <header class="navbar">
+  <section class="navbar-section">
+    <img class="navbar-icon" src="/favicon.ico">
+  </section>
+  <section class="navbar-center">
+    Remote OK
+  </section>
+  <section class="navbar-section">
+    <label class="accordion-header c-hand" for="accordion-sidebar">
+      <i class="icon icon-menu"></i>
+    </label>
+  </section>
+</header>
+
+<div class="accordion">
+  <input type="checkbox" id="accordion-sidebar" name="accordion-checkbox" hidden>
+  <div class="accordion-body">
+    <ul>
+<li><a href="/perface">前言</a></li>
+<li><a href="/theory">理论篇</a>
+<ul>
+<li><a href="/what-is-remote">远程工作是什么</a></li>
+<li><a href="/jobs">什么样的工种适合远程工作</a></li>
+<li><a href="/value-to-employers">远程工作对于雇主的价值</a></li>
+<li><a href="/value-to-employees">远程工作对于雇员的价值</a></li>
+<li><a href="/compared-with-outsource-project">远程工作和外包的区别</a></li>
+<li><a href="/some-questions">采用远程工作需要考虑的问题</a></li>
+<li><a href="/disadvantage">远程工作的劣势</a></li>
+</ul>
+</li>
+<li><a href="/experience">经验篇</a>
+<ul>
+<li><a href="/experience-by-employees">雇员远程工作经验</a></li>
+<li><a href="/experience-by-employers">雇主远程工作经验</a></li>
+</ul>
+</li>
+<li>工具篇
+<ul>
+<li><a href="/workflows">远程团队工作流</a></li>
+<li><a href="/project-management">远程团队项目管理工具</a></li>
+<li><a href="/task-management">远程团队任务管理工具</a></li>
+<li><a href="/communication-tools">远程团队沟通工具</a></li>
+<li><a href="/time-management">远程团队时间管理工具</a></li>
+<li><a href="/code-management">远程团队代码管理工具</a></li>
+<li><a href="/design-management">远程团队设计管理工具</a></li>
+<li><a href="/meeting-tools">远程团队会议工具</a></li>
+<li><a href="/document-tool">远程团队文档协作工具</a></li>
+</ul>
+</li>
+<li><a href="/interview">访谈篇</a>
+<ul>
+<li><a href="/interview-by-tower">Tower 团队 48 个月远程实践</a></li>
+<li><a href="/interview-by-deepdevelop">从 300 到 300 万，一个远程外包团队的发展历程和经验</a></li>
+<li><a href="/interview-by-deepdevelop-1">从 300 万到 1000 万,DeepDevelop 外包业务第二阶段总结</a></li>
+</ul>
+</li>
+<li><a href="/reference">资料篇</a>
+<ul>
+<li><a href="/books">推荐书籍</a></li>
+<li><a href="/podcast">推荐播客</a></li>
+<li><a href="/website">推荐网站</a></li>
+</ul>
+</li>
+<li><a href="/conclusion">结语</a></li>
+<li><a href="/changelog">更新记录</a></li>
+<li><a href="/about-me">关于我</a></li>
+</ul>
+
+  </div>
+</div>
+</div>
+
+<div class="book-post">
+  <h1 id="会议工具">会议工具</h1>
+<p>团队协作难免会遇到需要进行多对多沟通的场景。传统的群聊无法满足我们对于信息传递的需求，因此，一些必要的会议工具可以帮助你更好的完成自己的工作。</p>
+<h2 id="总览">总览</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">免费</th>
+<th style="text-align:center">桌面投屏</th>
+<th style="text-align:center">外部参会</th>
+<th style="text-align:center">Slogan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">QQ群视频</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">无</td>
+</tr>
+<tr>
+<td style="text-align:center">微信群视频</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">无</td>
+</tr>
+<tr>
+<td style="text-align:center">Zoom</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">Video Conferencing, Web Conferencing, Webinars, Screen Sharing</td>
+</tr>
+<tr>
+<td style="text-align:center">腾讯会议</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">云会议·随时随地 高清音视频会议</td>
+</tr>
+<tr>
+<td style="text-align:center">飞书会议</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">流畅可协同的音视频会议</td>
+</tr>
+<tr>
+<td style="text-align:center">小鱼易连</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">小鱼易连，人人都会用的云视频会议</td>
+</tr>
+<tr>
+<td style="text-align:center">华为 WeLink</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">更懂企业的智能工作平台</td>
+</tr>
+</tbody>
+</table>
+<h2 id="工具清单">工具清单</h2>
+<h3 id="QQ群视频">QQ群视频</h3>
+<p>对于一些使用 QQ 群进行协作的团队来说，QQ 群视频已经可以满足协作的需求。</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>QQ 群视频</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人数限制</td>
+<td>50 人观看 &amp; 6 人同时发言</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>免费</td>
+</tr>
+<tr>
+<td>投屏</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>是否支持外部参会者</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<h3 id="微信群视频">微信群视频</h3>
+<p>微信群是现在不少企业和团队的协作方式，微信群同样也是一个视频会议的可选项。</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>微信群视频</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人数限制</td>
+<td>9 人同时在线</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>免费</td>
+</tr>
+<tr>
+<td>投屏</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>是否支持外部参会者</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Zoom-com-cn"><a href="http://Zoom.com.cn" target="_blank" rel="noopener">Zoom.com.cn</a></h3>
+<p><img src="https://postimg.aliavv.com/mbp/05izm.png" alt=""></p>
+<p>Zoom 是来自硅谷的初创公司的产品，近年来，在社会上广受好评，提供了高质量和免费的视频服务。</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>Zoom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人数限制</td>
+<td>免费版限制100人</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>有免费版</td>
+</tr>
+<tr>
+<td>投屏</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>无限制</td>
+</tr>
+<tr>
+<td>是否支持外部参会者</td>
+<td>是</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Zoom 免费版套餐<br>
+主持无限次数的会议（每次主持一场会议）<br>
+1对1会议没有时间限制<br>
+会议时长限制为40分钟，人数为3到100人</p>
+</blockquote>
+<h3 id="腾讯会议"><a href="https://meeting.qq.com/" target="_blank" rel="noopener">腾讯会议</a></h3>
+<p><img src="https://postimg.aliavv.com/mbp/kkpgb.png" alt=""></p>
+<p>腾讯会议是腾讯云提供的在线会议解决方案，支持手机、电脑、平板、Web一键入会，支持在小程序中参与会议。</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>腾讯会议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人数限制</td>
+<td>免费版限制25人</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>有免费版</td>
+</tr>
+<tr>
+<td>投屏</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>无限制</td>
+</tr>
+<tr>
+<td>是否支持外部参会者</td>
+<td>是</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>腾讯会议免费版套餐<br>
+不限次数一对一会议<br>
+限时45分钟的多人群组会议<br>
+最高可达25名参会者<br>
+支持小程序加入会议</p>
+</blockquote>
+<h3 id="飞书会议"><a href="https://www.feishu.cn/product/video" target="_blank" rel="noopener">飞书会议</a></h3>
+<p>飞书作为头条系主推的工作场景下的协作应用，也提供了视频会议的能力。</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>腾讯会议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人数限制</td>
+<td>免费版限制 10 人</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>有免费版</td>
+</tr>
+<tr>
+<td>投屏</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>无限制</td>
+</tr>
+<tr>
+<td>是否支持外部参会者</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<h3 id="小鱼易连"><a href="https://www.xylink.com/product/cloud" target="_blank" rel="noopener">小鱼易连</a></h3>
+<p><img src="https://postimg.aliavv.com/mbp/ou88o.png" alt=""></p>
+<p>小鱼易连在一些小的团队中也会使用，我曾在和一个客户沟通的时候使用过小鱼易连，使用体验接近 Zoom。</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>小鱼易联</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人数限制</td>
+<td>免费版限制 3 人</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>有免费版</td>
+</tr>
+<tr>
+<td>投屏</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>无限制</td>
+</tr>
+<tr>
+<td>是否支持外部参会者</td>
+<td>是</td>
+</tr>
+</tbody>
+</table>
+<h3 id="华为云-WeLink"><a href="https://www.huaweicloud.com/product/welink.html" target="_blank" rel="noopener">华为云 WeLink</a></h3>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>腾讯会议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人数限制</td>
+<td>基础版套餐并发 10 人</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>有免费版</td>
+</tr>
+<tr>
+<td>投屏</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>注册</td>
+<td>无限制</td>
+</tr>
+<tr>
+<td>是否支持外部参会者</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<h2 id="总结">总结</h2>
+<p>会议工具有很多，你需要根据自己的使用习惯、使用场景来进行选择。我个人用的比较多的是 Zoom 和 腾讯会议，Zoom 有些时候可能会无法在境内访问，这时候，腾讯会议是一个很好的替代品。</p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+
+      <div class="column col-2 hide-lg">
+        <div class="book-toc">
+  <div class="book-tocbot">
+  </div>
+  <div class="book-tocbot-menu">
+    <a class="book-toc-expand" onclick="expand_toc()">展开所有</a>
+    <a onclick="go_top()">返回顶部</a>
+    <a onclick="go_bottom()">前往底部</a>
+  </div>
+</div>
+
+<script>
+tocbot.init({
+  tocSelector: '.book-tocbot',
+  contentSelector: '.book-post',
+  headingSelector: 'h1, h2, h3, h4, h5',
+  collapseDepth: 2,
+  orderedList: false,
+  scrollSmooth: false,
+});
+
+function expand_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 6,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "collapse_toc()");
+  b.innerHTML = "收起所有"
+}
+
+function collapse_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 2,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "expand_toc()");
+  b.innerHTML = "展开所有"
+}
+
+function go_top() {
+  window.scrollTo(0, 0);
+}
+
+function go_bottom() {
+  window.scrollTo(0, document.body.scrollHeight);
+}
+
+</script>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
